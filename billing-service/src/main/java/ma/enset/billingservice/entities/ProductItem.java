@@ -1,11 +1,10 @@
 package ma.enset.billingservice.entities;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.*;
-import ma.enset.inventoryservice.entities.Product;
-
-import java.beans.Transient;
+import ma.enset.billingservice.model.Product;
 
 @Entity
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
@@ -18,7 +17,6 @@ public class ProductItem {
     private Bill bill;
     private int quantity;
     private double unitPrice;
-    @ManyToOne
-    @JoinColumn(name = "product_id")
+    @Transient
     private Product product;
 }
