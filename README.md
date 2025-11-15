@@ -9,19 +9,9 @@ Application de facturation avec architecture microservices - Spring Boot + Angul
 
 ## Architecture
 
-![Architecture](screenshots/architecture.png)
-
-## Services
-
-| Service   | Port | Endpoint                            |
-| --------- | ---- | ----------------------------------- |
-| Angular   | 4200 | http://localhost:4200               |
-| Eureka    | 8761 | http://localhost:8761               |
-| Gateway   | 8888 | http://localhost:8888               |
-| Customer  | 8081 | http://localhost:8081/api/customers |
-| Inventory | 8082 | http://localhost:8082/api/products  |
-| Billing   | 8083 | http://localhost:8083/bills/{id}    |
-
+<p align="center">
+  <img src="screenshots/architecture.png" alt="Architecture">
+</p>
 ## Documentation
 
 ### Backend Services
