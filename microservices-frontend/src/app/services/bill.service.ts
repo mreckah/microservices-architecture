@@ -7,7 +7,7 @@ import { Bill } from '../models/bill.interface';
   providedIn: 'root'
 })
 export class BillService {
-  private apiUrl = 'http://localhost:8083/api/bills';
+  private apiUrl = 'http://localhost:8083/bills';
 
   constructor(private http: HttpClient) {}
 

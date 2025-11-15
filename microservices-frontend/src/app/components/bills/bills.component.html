@@ -25,13 +25,18 @@
     <div class="bill-header">
       <h3>Bill #{{ bill.id }}</h3>
       <p><strong>Date:</strong> {{ bill.billingDate | date:'medium' }}</p>
+      <p><strong>Customer ID:</strong> {{ bill.customerId }}</p>
     </div>
 
     <div class="customer-info" *ngIf="bill.customer">
       <h4>Customer Information</h4>
       <p><strong>Name:</strong> {{ bill.customer.name }}</p>
       <p><strong>Email:</strong> {{ bill.customer.email }}</p>
-      <p><strong>Customer ID:</strong> {{ bill.customerId }}</p>
+    </div>
+
+    <div class="customer-info error" *ngIf="!bill.customer">
+      <h4>Customer Information</h4>
+      <p>⚠️ Customer data not loaded (check if billing-service is running)</p>
     </div>
 
     <div class="items-section" *ngIf="bill.productItems && bill.productItems.length > 0">

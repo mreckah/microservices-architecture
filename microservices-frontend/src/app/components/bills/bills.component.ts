@@ -28,6 +28,7 @@ export class BillsComponent implements OnInit {
     this.error = null;
     this.billService.getBillById(this.billId).subscribe({
       next: (data) => {
+        console.log('Bill data received:', data);
         this.bill = data;
         this.loading = false;
       },
