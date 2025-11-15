@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>Customers</h2>
+  
+  <div *ngIf="loading" class="loading">
+    <p>Loading customers...</p>
+  </div>
+
+  <div *ngIf="error" class="error">
+    <p>{{ error }}</p>
+  </div>
+
+  <div *ngIf="!loading && !error" class="customers-grid">
+    <div *ngFor="let customer of customers" class="customer-card">
+      <h3>{{ customer.name }}</h3>
+      <p><strong>ID:</strong> {{ customer.id }}</p>
+      <p><strong>Email:</strong> {{ customer.email }}</p>
+    </div>
+  </div>
+
+  <div *ngIf="!loading && !error && customers.length === 0" class="no-data">
+    <p>No customers found.</p>
+  </div>
+</div>
+

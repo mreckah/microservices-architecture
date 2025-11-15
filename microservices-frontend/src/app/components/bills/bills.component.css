@@ -1,0 +1,146 @@
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.bill-selector {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.bill-selector label {
+  font-weight: bold;
+}
+
+.bill-selector input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 150px;
+}
+
+.bill-selector button {
+  padding: 8px 20px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.bill-selector button:hover {
+  background-color: #1565c0;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+}
+
+.error {
+  color: #d32f2f;
+  background-color: #ffebee;
+  border-radius: 4px;
+}
+
+.bill-details {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.bill-header {
+  border-bottom: 2px solid #1976d2;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.bill-header h3 {
+  color: #1976d2;
+  margin: 0 0 10px 0;
+}
+
+.customer-info {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.customer-info h4 {
+  margin-top: 0;
+  color: #333;
+}
+
+.customer-info p {
+  margin: 8px 0;
+  color: #666;
+}
+
+.items-section {
+  margin-top: 20px;
+}
+
+.items-section h4 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.items-table th,
+.items-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.items-table th {
+  background-color: #1976d2;
+  color: white;
+  font-weight: bold;
+}
+
+.items-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.items-table tfoot tr {
+  background-color: #f9f9f9;
+  font-size: 18px;
+}
+
+.items-table tfoot td {
+  border-top: 2px solid #1976d2;
+  padding: 15px 12px;
+}
+
+.total-label {
+  text-align: right;
+}
+
+.total-amount {
+  color: #1976d2;
+}
+

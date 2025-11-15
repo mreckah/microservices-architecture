@@ -1,0 +1,14 @@
+<div class="app-container">
+  <header class="header">
+    <h1>{{ title }}</h1>
+    <nav class="nav">
+      <a routerLink="/customers" routerLinkActive="active">Customers</a>
+      <a routerLink="/products" routerLinkActive="active">Products</a>
+      <a routerLink="/bills" routerLinkActive="active">Bills</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
