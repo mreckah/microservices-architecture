@@ -10,8 +10,9 @@ Application de facturation avec architecture microservices - Spring Boot + Angul
 ## Architecture
 
 <p align="center">
-  <img src="screenshots/architecture.png" alt="Architecture">
+  <img src="screenshots/architecture.png" alt="Architecture" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 </p>
+
 ## Documentation
 
 ### Backend Services
@@ -54,3 +55,9 @@ Application de facturation avec architecture microservices - Spring Boot + Angul
 #### Bills Page
 
 ![Angular Bills](screenshots/angular-bills.png)
+
+---
+
+<p align="center">
+  <sub>Built with Spring Boot & Angular </sub>
+</p>
